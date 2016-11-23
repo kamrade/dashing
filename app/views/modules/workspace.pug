@@ -1,0 +1,42 @@
+.container-fluid
+	section.workspace.row
+		.col-xs-12
+			ul.nav.nav-tabs(role="tablist")
+				li.active(role="presentation")
+					a(href="#all" aria-controls="all" role="tab" data-toggle="tab") All
+				li(role="presentation")
+					a(href="#payments" aria-controls="payments" role="tab" data-toggle="tab") Payments
+				li(role="presentation")
+					a(href="#refunds" aria-controls="refunds" role="tab" data-toggle="tab") Refunds
+				li(role="presentation")
+					a(href="#payouts" aria-controls="payouts" role="tab" data-toggle="tab") Payouts
+
+			.tab-content
+				.all-transactions.tab-pane.fade.in.active#all(role="tabpanel")
+					.row
+						.col-xs-12
+							ul.board-nav.nav.nav-tabs.tabs-left.col-sm-2.sidebar
+								li.active
+									a(href="#captured" data-toggle="tab") Captured
+								li
+									a(href="#declined" data-toggle="tab") Declined
+								li
+									a(href="#onhold" data-toggle="tab") On Hold
+								li
+									a(href="#chargeback" data-toggle="tab") Chargeback
+							.tab-content.col-sm-10
+								.board.tab-pane.fade.in.active#captured(role="tabpanel")
+									h5 Captured
+								.board.tab-pane.fade#declined(role="tabpanel")
+									h5 Declined
+								.board.tab-pane.fade#onhold(role="tabpanel")
+									h5 On Hold
+								.board.tab-pane.fade#chargeback(role="tabpanel")
+									h5 Chargeback
+
+				.tab-pane.fade#payments(role="tabpanel")
+					h4 Payments
+				.tab-pane.fade#refunds(role="tabpanel")
+					h4 Refunds
+				.tab-pane.fade#payouts(role="tabpanel")
+					h4 Payouts

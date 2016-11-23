@@ -1,0 +1,24 @@
+doctype
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Transactions Manager
+		meta(name="description" content="template")
+		meta(name="keywords" content="template")
+		meta(name="author" content="Kamrade")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+
+		link(rel="stylesheet" type="text/css" href="css/bundle.min.css")
+
+	body
+		.app
+			include ./modules/header.pug
+			include ./modules/toolbar.pug
+			include ./modules/categories.pug
+			include ./modules/workspace.pug
+
+		script(type="text/javascript" src="lib/jquery.min.js")
+		script(type="text/javascript" src="lib/bootstrap.min.js")
+		script(type="text/javascript" src="js/app.js")
